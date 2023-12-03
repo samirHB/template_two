@@ -55,4 +55,21 @@ header .container {
     align-items: center;
     position: relative;
 }
+
+header .container::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    width: calc(100% - 30px);
+}
+
+header .container .logo img {
+    height: 40px;
+}
+
+header .container nav {
+    flex: 1;
+}
 /* end header  */
