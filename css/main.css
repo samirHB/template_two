@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+:root {
+  --main-color: #19c8fe;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,31 +49,52 @@ ul {
 /* start header  */
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 header .container::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    background-color: white;
-    bottom: 0;
-    width: calc(100% - 30px);
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.493);
+  bottom: -1px;
+  width: calc(100% - 30px);
 }
 
 header .container .logo img {
-    height: 40px;
+  height: 40px;
 }
 
 header .container nav {
-    flex: 1;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .container nav ul {
+  display: flex;
+}
+
+header .container nav ul li a {
+  color: white;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 40px 10px;
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 /* end header  */
