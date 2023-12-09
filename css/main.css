@@ -342,18 +342,18 @@ header nav .form i {
     flex-direction: column;
     text-align: center;
   }
-  .services .srv-box i {
-  margin: 0 0 30px;
+  .srv-box i {
+  margin: 0 0 30px ;
 }
 
 .srv-box {
   margin-bottom: 40px;
 }
+
 }
 
 .services .srv-box i {
-  margin: 0 0 30px;
-  
+ margin-right: 30px !important;
 }
 
 .services .srv-box h3 {
